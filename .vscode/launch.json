@@ -1,0 +1,83 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch AbreviandoOperadoresAritmetico",
+            "request": "launch",
+            "mainClass": "AbreviandoOperadoresAritmetico",
+            "projectName": "Algaworks_1141dab7"
+        },
+        {
+            "type": "java",
+            "name": "Launch AulasVariaveis",
+            "request": "launch",
+            "mainClass": "AulasVariaveis",
+            "projectName": "Algaworks_1141dab7"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculadoraTicktMedio",
+            "request": "launch",
+            "mainClass": "CalculadoraTicktMedio",
+            "projectName": "Algaworks_1141dab7"
+        },
+        {
+            "type": "java",
+            "name": "Launch OlaMergulhador",
+            "request": "launch",
+            "mainClass": "OlaMergulhador",
+            "projectName": "Algaworks_1141dab7"
+        },
+        {
+            "type": "java",
+            "name": "Launch OperadorDecremento",
+            "request": "launch",
+            "mainClass": "OperadorDecremento",
+            "projectName": "Algaworks_1141dab7"
+        },
+        {
+            "type": "java",
+            "name": "Launch OperadoresAritmeticos",
+            "request": "launch",
+            "mainClass": "OperadoresAritmeticos",
+            "projectName": "Algaworks_1141dab7"
+        }
+    ]
+}
