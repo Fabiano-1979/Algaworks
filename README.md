@@ -5,6 +5,21 @@ Especialista Java
 Treinamento imersivo de fundamentos sólidos da linguagem Java, Orientação a Objetos, principais APIs da plataforma, boas práticas e Clean Code.
 --- Especialista em JAVA ----
 
+Java Specialist Immersive training on solid Java language fundamentals, Object Orientation, main platform APIs, best practices and Clean Code. --- JAVA Specialist ----
 
-<a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fd33wubrfki0l68.cloudfront.net%2F0d897ea647784884d47d2c892bcb613bc1c862e8%2Fa0e06%2Fimages%2Fcurso%2Fespecialista-java.f0979675950da663e0b4fac5399fb72b67ea3fb8f5ebef98464c41b652bbecf1.png&imgrefurl=https%3A%2F%2Fwww.algaworks.com%2F&tbnid=Y6YNlXWWl_CNVM&vet=12ahUKEwj-28X2j8z5AhUEAbkGHW4rA-MQMygDegUIARC1AQ..i&docid=XO0v1toyaW3BZM&w=601&h=355&q=algaworks%20java&ved=2ahUKEwj-28X2j8z5AhUEAbkGHW4rA-MQMygDegUIARC1AQ"></a>
+Ementa do curso: / Course program:
+
+- Plataforma Java e ambiente de desenvolvimento/ Java platform and development environment
+- Fundamentos da linguagem Java/ Java language fundamentals
+- Estruturas de controle e operadores/ Control structures and operators
+- Rodutividade com a IDE IntelliJ IDEA/ Productivity with the IntelliJ IDEA IDE
+- Mergulhando em orientação a objetos/ Diving into object orientation
+- Boas práticas com Effective Java e Clean Code/ Best practices with Effective Java and Clean Code
+- Wrappers e boxing/ wrappers and boxing
+- Trabalhando com arrays/ Working with arrays
+- Gerenciamento de memória do Java/ Java memory management
+- Construtores, pacotes e visibilidade/ Constructors, packages and visibility
+- Encapsulamento, JavaBeans e Records/ Encapsulation, JavaBeans and Records
+- Herança, polimorfismo e classes abstratas/ Inheritance, polymorphism and abstract classes
+- Exceções/ exceptions
 
