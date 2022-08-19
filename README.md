@@ -32,7 +32,7 @@ Ementa do curso: / Course program:
 - Classes aninhadas/ nested classes
 - Expressões Lambda e Method Reference/ Lambda Expressions and Method Reference
 - Streams API/ Streams API
-- Manipulando arquivos e I/O/ Handling files and I/O
+- Manipulando arquivos e I/O  / Handling files and I/O
 - Arquivos JAR e Apache Maven/ JAR files and Apache Maven
 - Logging com Logback e SLF4J/ Logging with Logback and SLF4J
 - Banco de dados e JDBC/ Database and JDBC
