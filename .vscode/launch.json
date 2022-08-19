@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch DesafioEntrada",
+            "request": "launch",
+            "mainClass": "DesafioEntrada",
+            "projectName": "Algaworks_e7ff7316"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",

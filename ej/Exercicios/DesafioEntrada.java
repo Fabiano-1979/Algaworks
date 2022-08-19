@@ -17,7 +17,7 @@ Use a formatação de saída com printf para imprimir na saída e o tipo Scanner
 
 import java.util.Scanner; // IMPORTAÇÃO DO PACOTE. 
 
-public class Desafio_String_entrada_de_dados_printf_etc {
+public class DesafioEntrada {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in); // passando argumento
@@ -35,10 +35,17 @@ public class Desafio_String_entrada_de_dados_printf_etc {
         double salarioBruto = quantidadeHora * valorHora;
         double salarioLiquido = (quantidadeHora * valorHora) - desconto;
 
-        System.out.printf("Folha de pagamento do funcionario: %s \n", nome);// formatação com printF (%s --> nome)
-        System.out.printf("Quantidade de hora trabalhada mês: %s horas X Valor da hora trabalhada: R$: %s \n",
-                quantidadeHora, valorHora);// formatação com printF (%s --> quantidadeHora) 1º argumento, (%s -->
-                                           // valorHora) 2º argumento.
+        System.out.printf("---DESMOSTRATIVO DE PAGAMENTO---\n Folha de pagamento do funcionario: %s \n", nome);// formatação
+                                                                                                               // com
+                                                                                                               // printF
+                                                                                                               // (%s
+                                                                                                               // -->
+                                                                                                               // nome)
+        System.out.printf(
+                "Quantidade de hora trabalhada mês: %s horas X Valor da hora trabalhada: R$: %s = R$ %.2f%n ",
+                quantidadeHora, valorHora, salarioBruto);// formatação com printF (%s --> quantidadeHora) 1º argumento,
+                                                         // (%s -->// valorHora) 2º argumento e (%.2f%n --> salario
+                                                         // bruto) 3º argumento.
         System.out.printf("Desconto em folha R$: - %s \n", desconto);
         System.out.printf("Total devido/credidado em folha salarial R$: %.2f%n", salarioLiquido);// Passando com a
                                                                                                  // formatação do
