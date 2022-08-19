@@ -1,9 +1,166 @@
 https://docs.oracle.com/javase/10/jshell/commands.htm#JSHEL-GUID-34165A38-E6D0-459D-9947-4DEA9845A71A
 
 
-- <h1>Comandos</h1>
+-Comandos
 O JShell comanda controlar o ambiente e exibir informações dentro de uma sessão.
 
-Os comandos são distinguidos de trechos por uma barra dianteira (/). Para obter informações sobre as variáveis, métodos e tipos atuais, use o , e os comandos. Para obter uma lista de trechos inseridos, use o comando. O exemplo a seguir mostra esses comandos com base nos exemplos em Trying Out Snippets:/vars/methods/types/list
+Os comandos são distinguidos de trechos por uma barra dianteira (/). Para obter informações sobre 
+as variáveis, métodos e tipos atuais, use o , e os comandos. Para obter uma lista de trechos inseridos,
+ use o comando.
+  O exemplo a seguir mostra esses comandos com base nos exemplos em Trying Out Snippets:/vars/methods/types/list
 
-<a>image1.png</a>
+jshell> /vars
+|    int x = 45
+|    int $3 = 4
+|    String $5 = "OceanOcean"
+
+jshell> /methods
+|    twice (String)String
+
+jshell> /list
+
+   1 : System.out.println("Hi");
+   2 : int x = 45;
+   3 : 2 + 2
+   4 : String twice(String s) {
+         return s + s;
+       }
+   5 : twice("Ocean")
+
+   Observe que os tipos e valores das variáveis e o tipo de assinatura de métodos são exibidos.
+
+JShell tem um script de inicialização padrão que é executado silenciosamente e automaticamente 
+antes do JShell começar,
+ para que você possa começar a trabalhar rapidamente. As entradas do script de inicialização 
+ não estão listadas a menos que você as solicite com o ou comando:/list -start/list -all
+
+ jshell> /list -all
+
+  s1 : import java.util.*;
+  s2 : import java.io.*;
+  s3 : import java.math.*;
+  s4 : import java.net.*;
+  s5 : import java.util.concurrent.*;
+  s6 : import java.util.prefs.*;
+  s7 : import java.util.regex.*;
+   1 : System.out.println("Hi");
+   2 : int x = 45;
+   3 : 2 + 2
+   4 : String twice(String s) {
+         return s + s;
+       }
+   5 : twice("Ocean")
+
+   O script de inicialização padrão consiste em várias importações comuns. Você pode personalizar 
+   suas entradas de inicialização com o comando. Para obter informações sobre este comando, digite .
+    O comando salva o script atual 
+   de inicialização como ponto de partida para seu próprio script de inicialização.
+   /set start/help /set start/save -start
+
+Outros comandos importantes incluem deixar o JShell, salvar seus trechos e inserir trechos de um 
+arquivo./exit/save/open
+
+Digite uma lista dos comandos JShell./help
+
+Conclusão da guia para comandos
+
+Semelhante à conclusão do trecho, quando você inserir comandos e opções de comando, use a tecla 
+Tab para completar automaticamente o comando ou opção. Se a conclusão não pode ser determinada 
+a partir do que foi inserido, então possíveis escolhas são fornecidas.
+
+O exemplo a seguir mostra o feedback quando a Guia é pressionada após a barra de liderança 
+(/) para comandos:
+
+jshell> /<Tab>
+/!          /?          /drop       /edit       /env        /exit       /help
+/history    /imports    /list       /methods    /open       /reload     /reset      
+/save       /set        /types      /vars       
+
+<press tab again to see synopsis>
+
+jshell> /
+As conclusões exclusivas são feitas no local. Por exemplo, depois de digitar e pressionar a Tab,
+ a linha é substituída por:/l/list
+
+jshell> /l<Tab>
+
+jshell> /list
+A conclusão da guia também funciona para opções de comando. O exemplo a seguir mostra o uso da tecla 
+Tab para exibir as opções para o comando:/list
+
+jshell> /list -<Tab>
+-all       -history   -start     
+
+<press tab again to see synopsis>
+
+jshell> /list -
+Observe a mensagem sobre pressionar Tab novamente para mostrar a sinopse de comando, que é uma breve
+ descrição do comando. Pressione Tab uma terceira vez para mostrar a documentação de ajuda. O exemplo
+  a seguir mostra os resultados de pressionar Tab uma segunda e terceira vez:
+
+jshell> /list -<Tab>
+list the source you have typed
+
+<press tab again to see full documentation>
+
+jshell> /list -<Tab>
+Show the source of snippets, prefaced with the snippet id.
+
+/list
+    List the currently active snippets of code that you typed or read with /open
+
+/list -start
+    List the automatically evaluated start-up snippets
+
+/list -all
+    List all snippets including failed, overwritten, dropped, and start-up
+
+/list <name>
+    List snippets with the specified name (preference for active snippets)
+
+/list <id>
+    List the snippet with the specified snippet id
+
+jshell> /list -
+A conclusão de argumentos únicos é feita no lugar. Por exemplo, depois de digitar, a opção é mostrada
+ automaticamente:/list -a<Tab>-all
+
+jshell> /list -a<Tab>
+
+jshell> /list -all
+Os nomes de trechos também podem ser completados com a Guia. Por exemplo, se você definiu o método 
+anteriormente na sessão JShell e, em seguida, pressionar Tab depois de começar a inserir os resultados
+ do nome do método no nome completo do método que está sendo exibido:volume
+
+jshell> /ed v<Tab>
+
+jshell> /ed volume
+O uso do Tab em uma posição de argumento de arquivo do comando mostra os arquivos disponíveis:
+
+jshell> /open <Tab>
+myfile1      myfile2    definitions.jsh
+
+<press tab again to see synopsis>
+
+jshell> /open 
+A conclusão dos nomes de arquivos exclusivos é feita no lugar:
+
+jshell> /open d<Tab> 
+
+jshell> /open definitions.jsh
+Abreviaturas de comando
+Reduza a quantidade de digitação que você tem que fazer usando abreviaturas. Comandos, subcomandes,
+ argumentos de comando e opções de comando podem ser abreviados, desde que a abreviação seja única./set
+
+O único comando que começa com é , e a única opção que começa com é . Portanto, você pode usar as seguintes 
+abreviaturas para inserir o comando:/l/list/list-a-all/list -all
+
+jshell> /l -a
+Além disso, o único comando que começa é , o único subcomand que começa com é , e o único modo de 
+feedback que começa é , assumindo que não existem modos de feedback personalizados que começam com. 
+Portanto, você pode usar as seguintes abreviaturas para definir o modo de feedback para 
+verbose:/se/set/setfefeedbackvverbosev
+
+jshell> /se fe v
+Note que não é uma abreviação suficiente porque e ambos começam com a mesma letra. Na dúvida, 
+você pode usar a conclusão do Tab para ver as opções./s/save/set
