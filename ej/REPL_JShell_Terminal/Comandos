@@ -1,0 +1,9 @@
+https://docs.oracle.com/javase/10/jshell/commands.htm#JSHEL-GUID-34165A38-E6D0-459D-9947-4DEA9845A71A
+
+
+- <h1>Comandos</h1>
+O JShell comanda controlar o ambiente e exibir informações dentro de uma sessão.
+
+Os comandos são distinguidos de trechos por uma barra dianteira (/). Para obter informações sobre as variáveis, métodos e tipos atuais, use o , e os comandos. Para obter uma lista de trechos inseridos, use o comando. O exemplo a seguir mostra esses comandos com base nos exemplos em Trying Out Snippets:/vars/methods/types/list
+
+<a>image1.png</a>

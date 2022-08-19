@@ -1,0 +1,27 @@
+https://docs-oracle-com.translate.goog/javase/10/jshell/introduction-jshell.htm?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=sc
+
+A ferramenta Java Shell (JShell) é uma ferramenta interativa para aprender a linguagem de programação Java e prototipar o código Java.
+ JShell é um Loop De Impressão De Leitura -Avaliação (REPL), que avalia declarações, instruções e expressões à medida que são inseridas 
+ e mostram imediatamente os resultados. A ferramenta é executada a partir da linha de comando.
+
+Iniciando e Parando o JShell
+O JShell está incluído no JDK 9. Para iniciar o JShell, digite ojshell
+
+O JDK 9 deve estar instalado em seu sistema. Se o seu caminho não incluirjava-home/jdk-9/bin
+
+O exemplo a seguir mostra o comando e a resposta do JShell. O texto que você insere é mostrado em negrito:
+
+% jshell
+| Bem-vindo ao JShell -- Versão 9
+| Para uma introdução digite: /help intro
+
+jshell>
+
+Para iniciar o JShell no modo detalhado, use um-v
+
+% jshell -v
+Para sair do JShell, digite/exit
+
+jshell> /exit
+| Adeus
+

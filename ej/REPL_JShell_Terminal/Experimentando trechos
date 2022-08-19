@@ -1,0 +1,234 @@
+https://docs.oracle.com/javase/10/jshell/snippets.htm#JSHEL-GUID-63DBC3E7-6EF2-498D-8638-94867ED10F76
+
+Trechos do código Java são inseridos no JShell e imediatamente avaliados. É mostrado feedback sobre os resultados, 
+ações realizadas e quaisquer erros ocorridos. Use os exemplos nesta seção para dar uma chance ao JShell.
+
+Inicie o JShell com a opção verbose para obter a quantidade máxima de feedback disponível:
+
+% jshell -v
+|  Welcome to JShell -- Version 9
+|  For an introduction type: /help intro
+
+Digite a seguinte instrução de amostra no prompt e revise a saída que é mostrada:
+
+jshell> int x = 45
+x ==> 45
+|  created variable x : int
+
+Primeiro, o resultado é mostrado. Leia isso como: a variável x tem o valor 45. Como você está no modo verbose,
+ uma descrição do que ocorreu também é mostrada. Mensagens informativas começam com uma barra vertical. Observe 
+ que tanto o nome quanto o tipo da variável criada são mostrados.
+
+Nota:Os ponto e vírgulas terminante são automaticamente adicionados ao final de um trecho completo se não forem inseridos.
+
+Quando uma expressão é inserida que não tem uma variável nomeada, uma variável de risco é criada para que o valor possa 
+ser referenciado mais tarde. O exemplo a seguir mostra valores de risco para uma expressão e para os resultados de um método.
+ O exemplo também mostra o prompt de continuação () que é usado quando um trecho requer mais de uma linha de entrada para 
+ completar:...>
+
+ jshell> 2 + 2
+$3 ==> 4
+|  created scratch variable $3 : int
+
+jshell> String twice(String s) {
+   ...>    return s + s;
+   ...> }
+|  created method twice(String)
+
+jshell> twice("Ocean")
+$5 ==> "OceanOcean"
+|  created scratch variable $5 : String
+
+Alterando definições
+À medida que você experimenta o código, você pode descobrir que a definição de uma variável, método ou classe não está fazendo o que você quer que ele faça. A definição é facilmente alterada inserindo uma nova, que sobregrava a definição anterior.
+
+Para alterar a definição de uma variável, método ou classe, basta inserir uma nova definição. Por exemplo, o método definido em Trying Out Snippets obtém uma nova definição no seguinte exemplo:twice
+
+jshell> String twice(String s) {
+   ...>    return "Twice:" + s;
+   ...> }
+|  modified method twice(String)
+
+jshell> twice("thing")
+$7 ==> "Twice:thing"
+|  created scratch variable $7 : String
+Observe que, em vez de mostrar como antes, o feedback mostra . Esta mensagem significa que a definição mudou, mas o método tem a mesma assinatura e, portanto, todos os usos existentes continuam a ser válidos.created methodmodified method
+
+Você também pode alterar definições de maneiras incompatíveis. O exemplo a seguir mostra ser alterado de String:xint
+
+jshell> int x = 45
+x ==> 45
+|  created variable x : int
+
+jshell> String x
+x ==> null
+|  replaced variable x : String
+|    update overwrote variable x : int
+O tipo da variável mudou, e o feedback agora mostra .xreplaced
+
+Alterando o nível de feedback
+
+JShell foi iniciado no modo de feedback verboso, que fornece um monte de comentários. Você pode definir a quantidade e o formato de saída com o comando, por exemplo . Se você usa principalmente o JShell colando de outras janelas, então você pode preferir um modo de feedback sem feedback imediato e apenas erro. Se assim for, então entre no comando./set feedback/set feedback concise/set feedback silent
+
+Referências para a frente
+O JShell aceita definições de métodos que referenciam métodos, variáveis ou classes ainda não definidas. Isso é feito para apoiar a programação exploratória e porque algumas formas de programação exigem isso.
+
+Como exemplo, se você quiser definir um método para o volume de uma esfera, então você pode inserir a seguinte fórmula como o método :volume
+
+jshell> double volume(double radius) {
+   ...>    return 4.0 / 3.0 * PI * cube(radius);
+   ...> }
+|  created method volume(double), however, it cannot be invoked until variable PI, and method cube(double) are declared
+JShell permite a definição, mas avisa do que ainda está para ser definido. A definição pode ser referenciada, mas se a execução for tentada, então ela falha até que todos os elementos necessários sejam definidos:
+
+jshell> double PI = 3.1415926535
+PI ==> 3.1415926535
+|  created variable PI : double
+
+jshell> volume(2)
+|  attempted to call method volume(double) which cannot be invoked until method cube(double) is declared
+
+jshell> double cube(double x) { return x * x * x; }
+|  created method cube(double)
+|    update modified method volume(double)
+
+jshell> volume(2)
+$5 ==> 33.510321637333334
+|  created scratch variable $5 : double
+Com todas as definições em vigor, o método agora funciona.volume
+
+Este método agora é usado para ilustrar mais sobre substituição incompatível. Por exemplo, para alterar a precisão de , digite o novo valor como mostrado no exemplo a seguir:PI
+
+jshell> BigDecimal PI = new BigDecimal("3.141592653589793238462643383")
+PI ==> 3.141592653589793238462643383
+|  replaced variable PI : BigDecimal
+|    update modified method volume(double) which cannot be invoked until this error is corrected: 
+|      bad operand types for binary operator '*'
+|        first type:  double
+|        second type: java.math.BigDecimal
+|          return 4.0 / 3.0 * PI * cube(radius);
+|                 ^------------^
+|    update overwrote variable PI : double
+A nova definição é incompatível com a definição de . Como você está no modo verbose, as informações de atualização são mostradas para outras definições afetadas pela alteração, que neste caso descreve a incompatibilidade. Observe que o modo verbose é o único modo de feedback predefinido que exibe informações de atualização. Em outros modos de feedback, nenhum aviso é exibido até que o código seja executado. O objetivo disso é evitar uma sobrecarga de atualizações. Em todos os modos predefinidos, executar o método exibe o problema:PIvolume()volume()
+
+jshell> volume(2)
+|  attempted to call method volume(double) which cannot be invoked until this error is corrected: 
+|      bad operand types for binary operator '*'
+|        first type:  double
+|        second type: java.math.BigDecimal
+|          return 4.0 / 3.0 * PI * cube(radius);
+|                 ^------------^
+Exceções
+Em um recuo de exceção, o feedback identifica o trecho e a localização dentro do trecho onde a exceção ocorreu.
+
+O local dentro do código inserido no JShell é exibido como , onde o ID do trecho é o número exibido pelo comando, e o número de linha é o número da linha dentro do trecho. No exemplo a seguir, a exceção ocorre no trecho 1, que é o método, na segunda linha do método:#ID:line-number/listdivide()
+
+jshell> int divide(int x, int y) {
+   ...> return x / y;
+   ...> }
+|  created method divide(int,int)
+
+jshell> divide(5, 0)
+|  java.lang.ArithmeticException thrown: / by zero
+|        at divide (#1:2)
+|        at (#2:1)
+                             
+jshell> /list
+                                                            
+   1 : int divide(int x, int y) {
+           return x / y;
+       }
+   2 : divide(5, 0)
+Conclusão da guia para trechos
+Quando inserir trechos, use a tecla Guia para completar automaticamente o item. Se o item não puder ser determinado a partir do que foi inserido, então possíveis opções serão fornecidas.
+
+Por exemplo, se você inseriu o método de Referências de Frente, então você pode digitar as primeiras letras do nome do método e, em seguida, pressionar a tecla Tab para concluir a entrada:volume
+
+jshell> vol<Tab>
+A entrada muda para o seguinte:
+
+jshell> volume(
+Se o item puder ser concluído em mais de uma forma, o conjunto de possibilidades será exibido:
+
+jshell> System.c<Tab>
+class                 clearProperty(        console()             currentTimeMillis()
+
+jshell> System.c
+Quaisquer caracteres comuns são adicionados ao que você inseriu, e o cursor é colocado no final da entrada para que mais possa ser inserido.
+
+Quando você está no parêntese aberto de uma chamada de método, pressionar a guia mostra possibilidades de conclusão com os tipos de parâmetros:
+
+jshell> "hello".startsWith(<Tab>
+Signatures:
+boolean String.startsWith(String prefix, int toffset)
+boolean String.startsWith(String prefix)
+
+<press tab again to see documentation>
+
+jshell> "hello".startsWith(
+A guia de pressão mostra novamente uma versão de texto simples da documentação para o primeiro método.
+
+jshell> "hello".startsWith(<Tab>
+boolean String.startsWith(String prefix, int toffset)
+Tests if the substring of this string beginning at the specified index starts with the
+specified prefix.
+
+Parameters:
+prefix - the prefix.
+toffset - where to begin looking in this string.
+
+Returns:
+true if the character sequence represented by the argument is a prefix of the substring of this
+          object starting at index toffset ; false otherwise. The result is false if toffset is
+          negative or greater than the length of this String object; otherwise the result is
+          the same as the result of the expression
+                    this.substring(toffset).startsWith(prefix)
+                    
+
+<press tab to see next documentation>
+
+jshell> "hello".startsWith(
+Transformação de trechos
+O JShell facilita a importação de uma classe necessária quando é referenciado pela primeira vez e converte uma expressão em uma declaração variável usando atalhos de teclado.
+
+Quando você inserir um identificador que ainda não está importado, pressione Shift+Tab i imediatamente após o identificador para ver as opções que permitem adicionar a importação à sua sessão:
+
+jshell> new JFrame<Shift+Tab i>
+0: Do nothing
+1: import: javax.swing.JFrame
+Choice: 1
+Imported: javax.swing.JFrame
+
+jshell> new JFrame
+Digite o número da opção desejada. Mais de uma opção de importação poderia ser fornecida.
+
+Você pode converter uma expressão em uma declaração variável pressionando Shift+Tab v depois de inserir a expressão. A expressão torna-se o valor inicial da declaração variável, e o tipo de expressão torna-se o tipo da variável. Depois de pressionar Shift+Tab v, o cursor, indicado por uma barra vertical (|) no exemplo, é colocado na linha onde você precisa digitar o nome da variável:
+
+jshell> new JFrame("Demo") <Shift+Tab v>
+jshell> JFrame | = new JFrame("Demo")
+Nota:
+
+A expressão deve ser válida ou o pedido de transformação é ignorado. No exemplo, a importação de JFrame é necessária antes da transformação variável.
+Para completar o exemplo anterior, digite o nome da variável no cursor e pressione Enter:frame
+
+jshell> JFrame frame = new JFrame("Demo")
+frame ==> javax.swing.JFrame[frame0,0,0,0x0,invalid,hidden, ... tPaneCheckingEnabled=true]
+|  created variable frame : JFrame
+
+jshell>
+Às vezes, o tipo de resultado da expressão ainda não é importado. Nesse caso, Shift+Tab v oferece tanto importar quanto criar a variável, como mostrado no exemplo a seguir:
+
+jshell> frame.getGraphics() <Shift+Tab v>
+0: Do nothing
+1: Create variable
+2: import: java.awt.Graphics. Create variable
+Choice: 2
+Imported: java.awt.Graphics
+
+jshell> Graphics | = frame.getGraphics()
+Para completar o exemplo anterior, digite o nome da variável no cursor e pressione Enter:gc
+
+jshell> Graphics gc = frame.getGraphics()
+|  created variable gc : JFrame
+
+jshell>
