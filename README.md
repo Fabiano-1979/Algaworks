@@ -22,4 +22,18 @@ Ementa do curso: / Course program:
 - Encapsulamento, JavaBeans e Records/ Encapsulation, JavaBeans and Records
 - Herança, polimorfismo e classes abstratas/ Inheritance, polymorphism and abstract classes
 - Exceções/ exceptions
-
+- Interfaces e classes seladas/ Sealed interfaces and classes
+- Generics e Optional/ Generics and Optionals
+- Collections Framework/ Collections Framework
+- Enumerações/ Enumerations
+- Trabalhando com strings/ working with strings
+- Trabalhando com números/ Trabalhando com números
+- Trabalhando com data e hora/ Working with date and time
+- Classes aninhadas/ nested classes
+- Expressões Lambda e Method Reference/ Lambda Expressions and Method Reference
+- Streams API/ Streams API
+- Manipulando arquivos e I/O/ Handling files and I/O
+- Arquivos JAR e Apache Maven/ JAR files and Apache Maven
+- Logging com Logback e SLF4J/ Logging with Logback and SLF4J
+- Banco de dados e JDBC/ Database and JDBC
+- Anotações e Reflection API/ Annotations and Reflection API
