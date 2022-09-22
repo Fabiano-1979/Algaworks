@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch OperadoresLogicos",
+            "request": "launch",
+            "mainClass": "OperadoresLogicos",
+            "projectName": "Algaworks_af286391"
+        },
+        {
+            "type": "java",
             "name": "Launch DesafioEntrada",
             "request": "launch",
             "mainClass": "DesafioEntrada",
