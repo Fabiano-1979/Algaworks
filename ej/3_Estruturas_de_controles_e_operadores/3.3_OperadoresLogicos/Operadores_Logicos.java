@@ -1,6 +1,6 @@
 import java.util.Scanner; // Importação do pacote "SACNNER" --> entrada de dados.
 
-public class OperadoresLogicos {
+public class Operadores_Logicos {
 
     public static void main(String[] args) {
       Scanner entrada = new Scanner(System.in); // Comando de ler. Biblioteca java

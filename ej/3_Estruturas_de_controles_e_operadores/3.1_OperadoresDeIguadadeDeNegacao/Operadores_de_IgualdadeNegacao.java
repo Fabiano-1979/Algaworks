@@ -1,4 +1,4 @@
-public class OperadoresIgualdadeNegacao {
+public class Operadores_de_IgualdadeNegacao {
 
     public static void main(String[] args) {
       // boolean numerosIguais = 10 == 10; // para numeros IGUAIS.

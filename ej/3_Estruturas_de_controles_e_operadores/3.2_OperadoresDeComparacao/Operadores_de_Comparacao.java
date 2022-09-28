@@ -1,4 +1,4 @@
-public class OperadoresComparacao {
+public class Operadores_de_Comparacao {
 
     public static void main(String[] args) {
       int pesoProdutos = 900;
