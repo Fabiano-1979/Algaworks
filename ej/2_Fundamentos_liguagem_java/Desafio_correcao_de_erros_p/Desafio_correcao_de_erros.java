@@ -1,11 +1,6 @@
-public class OlaMergulhador01 {
+public class Desafio_correcao_de_erros {
 
-    public static void main(String[]args) {
+    public static void main(String[] args) {
         System.out.println("Olá, mergulhador!");
-    }try {
-        
     
-    } catch (Exception e) {
-        // TODO: handle exception
-    }
 }
