@@ -1,0 +1,203 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AbreviandoOperadoresAritmetico",
+            "request": "launch",
+            "mainClass": "AbreviandoOperadoresAritmetico",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "AulasVariaveis",
+            "request": "launch",
+            "mainClass": "AulasVariaveis",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "CalculadoraIdadeMedia",
+            "request": "launch",
+            "mainClass": "CalculadoraIdadeMedia",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "CalculadoraPesosDasCargas",
+            "request": "launch",
+            "mainClass": "CalculadoraPesosDasCargas",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "CalculadoraTicktMedio",
+            "request": "launch",
+            "mainClass": "CalculadoraTicktMedio",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "ConversaoDoubleParaFloat",
+            "request": "launch",
+            "mainClass": "ConversaoDoubleParaFloat",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "ConversaoDoubleParaInt",
+            "request": "launch",
+            "mainClass": "ConversaoDoubleParaInt",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "ConversaoIntParaLong",
+            "request": "launch",
+            "mainClass": "ConversaoIntParaLong",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "ConversaoLongParaInt",
+            "request": "launch",
+            "mainClass": "ConversaoLongParaInt",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "DesafioEntrada",
+            "request": "launch",
+            "mainClass": "DesafioEntrada",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "EntradaDeDados",
+            "request": "launch",
+            "mainClass": "EntradaDeDados",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "ExemploBoolean",
+            "request": "launch",
+            "mainClass": "ExemploBoolean",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "ExemploByteShort",
+            "request": "launch",
+            "mainClass": "ExemploByteShort",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "ExemploChar",
+            "request": "launch",
+            "mainClass": "ExemploChar",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "ExemploFloatDouble",
+            "request": "launch",
+            "mainClass": "ExemploFloatDouble",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "ExemploInt",
+            "request": "launch",
+            "mainClass": "ExemploInt",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "ExemploLong",
+            "request": "launch",
+            "mainClass": "ExemploLong",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "ExemploString",
+            "request": "launch",
+            "mainClass": "ExemploString",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "FormatandoComPrintf",
+            "request": "launch",
+            "mainClass": "FormatandoComPrintf",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "IndiceMassaCorporal",
+            "request": "launch",
+            "mainClass": "IndiceMassaCorporal",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "OlaMergulhador",
+            "request": "launch",
+            "mainClass": "OlaMergulhador",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "OperadorDecremento",
+            "request": "launch",
+            "mainClass": "OperadorDecremento",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "OperadoresAritmeticos",
+            "request": "launch",
+            "mainClass": "OperadoresAritmeticos",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "PromocaoAritmetica1",
+            "request": "launch",
+            "mainClass": "PromocaoAritmetica1",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "PromocaoAritmetica2",
+            "request": "launch",
+            "mainClass": "PromocaoAritmetica2",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "PromocaoAritmetica3",
+            "request": "launch",
+            "mainClass": "PromocaoAritmetica3",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        },
+        {
+            "type": "java",
+            "name": "SequenciasEscape",
+            "request": "launch",
+            "mainClass": "SequenciasEscape",
+            "projectName": "2_Fundamentos_liguagem_java_42f162f7"
+        }
+    ]
+}
