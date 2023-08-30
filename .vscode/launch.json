@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OperadorIncremento",
+            "request": "launch",
+            "mainClass": "OperadorIncremento",
+            "projectName": "Algaworks_dbd27bc8"
+        },
+        {
+            "type": "java",
+            "name": "AulaVariaveis",
+            "request": "launch",
+            "mainClass": "AulaVariaveis",
+            "projectName": "Algaworks_dbd27bc8"
+        },
+        {
+            "type": "java",
             "name": "AulasVariaveis",
             "request": "launch",
             "mainClass": "AulasVariaveis",

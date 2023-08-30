@@ -1,0 +1,20 @@
+{
+    "java.project.sourcePaths": [
+        "ej/3_Estruturas_de_controles_e_operadores/3.1_OperadoresDeIguadadeDeNegacao",
+        "ej/2_Fundamentos_liguagem_java/TiposPrimitivos",
+        "ej/2_Fundamentos_liguagem_java/SequenciasEscapeSaida",
+        "ej/2_Fundamentos_liguagem_java/RecebendoEntradaDeDados",
+        "ej/2_Fundamentos_liguagem_java/PromocaoAritmetica",
+        "ej/2_Fundamentos_liguagem_java/OperadoresAritmeticos",
+        "ej/2_Fundamentos_liguagem_java/OperadorDecremento",
+        "ej/2_Fundamentos_liguagem_java/OlaMergulhador",
+        "ej/2_Fundamentos_liguagem_java/FormatandoComPrintf",
+        "ej/2_Fundamentos_liguagem_java/Exercicios",
+        "ej/2_Fundamentos_liguagem_java/ExemploString",
+        "ej/2_Fundamentos_liguagem_java/Desafio_correcao_de_erros_p",
+        "ej/2_Fundamentos_liguagem_java/ConversãoPrimitivos",
+        "ej/2_Fundamentos_liguagem_java/AulaVariaiveis",
+        "ej/2_Fundamentos_liguagem_java/AbreviandoOperadoresAritmetico",
+        "ej/2_Fundamentos_liguagem_java/OperadorIncremento"
+    ]
+}
