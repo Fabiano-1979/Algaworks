@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AulasVariaveis",
+            "request": "launch",
+            "mainClass": "AulasVariaveis",
+            "projectName": "Algaworks_dbd27bc8"
+        },
+        {
+            "type": "java",
             "name": "Launch OperadoresLogicos",
             "request": "launch",
             "mainClass": "OperadoresLogicos",
