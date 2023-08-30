@@ -1,6 +1,6 @@
 // Programa para explicações de variaveis.
 
-public class AulasVariaveis {
+public class AulaVariaveis {
 
   public static void main(String[] args) {
   
