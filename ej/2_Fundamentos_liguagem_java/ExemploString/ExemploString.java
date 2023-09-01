@@ -16,6 +16,13 @@ public class ExemploString {
     // realiza cálculo antes da concatenação
     System.out.println("Resultado: " + (x + y));
 
+    //Cuidado!! respeitar as ordem que a compilação vai ser feita, exemplo abaixo
+    System.out.println("Resultado: " + x + y); // nesse caso , JVM vai contetenar com os numeros + String ----> ERRO!
+
+    // aqui RODA do mesmo jeito, mas somente por causa da ORDEM, QUE VEEM ANTES DA STRING. (Assim o calculo vai na frente da string)
+    System.out.println((x + y) + "Resultado: ");
+
+
     String nome = "Maria"; // Variavel string (S)Maisculo para nomes em java , pois e uma classe.
     int idade = 30;
 
