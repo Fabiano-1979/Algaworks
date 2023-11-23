@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OlaMergulhador",
+            "request": "launch",
+            "mainClass": "OlaMergulhador",
+            "projectName": "Algaworks_dbd27bc8"
+        },
+        {
+            "type": "java",
             "name": "IndiceMassaCorporal",
             "request": "launch",
             "mainClass": "IndiceMassaCorporal",
