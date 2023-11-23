@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IndiceMassaCorporal",
+            "request": "launch",
+            "mainClass": "IndiceMassaCorporal",
+            "projectName": "Algaworks_dbd27bc8"
+        },
+        {
+            "type": "java",
+            "name": "EntradaDeDados",
+            "request": "launch",
+            "mainClass": "EntradaDeDados",
+            "projectName": "Algaworks_dbd27bc8"
+        },
+        {
+            "type": "java",
             "name": "FormatandoComPrintf",
             "request": "launch",
             "mainClass": "FormatandoComPrintf",
