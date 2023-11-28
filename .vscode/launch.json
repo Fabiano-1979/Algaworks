@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AbreviandoOperadoresAritmetico",
+            "request": "launch",
+            "mainClass": "AbreviandoOperadoresAritmetico",
+            "projectName": "Algaworks_dbd27bc8"
+        },
+        {
+            "type": "java",
+            "name": "CalculadoraTicktMedio",
+            "request": "launch",
+            "mainClass": "CalculadoraTicktMedio",
+            "projectName": "Algaworks_dbd27bc8"
+        },
+        {
+            "type": "java",
+            "name": "OperadoresAritmeticos",
+            "request": "launch",
+            "mainClass": "OperadoresAritmeticos",
+            "projectName": "Algaworks_dbd27bc8"
+        },
+        {
+            "type": "java",
             "name": "OlaMergulhador",
             "request": "launch",
             "mainClass": "OlaMergulhador",
