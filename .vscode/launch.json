@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ExemploString",
+            "request": "launch",
+            "mainClass": "ExemploString",
+            "projectName": "Algaworks_dbd27bc8"
+        },
+        {
+            "type": "java",
+            "name": "DesafioPromocaoAritmetica",
+            "request": "launch",
+            "mainClass": "DesafioPromocaoAritmetica",
+            "projectName": "Algaworks_dbd27bc8"
+        },
+        {
+            "type": "java",
+            "name": "ConversaoLongParaInt",
+            "request": "launch",
+            "mainClass": "ConversaoLongParaInt",
+            "projectName": "Algaworks_dbd27bc8"
+        },
+        {
+            "type": "java",
             "name": "AbreviandoOperadoresAritmetico",
             "request": "launch",
             "mainClass": "AbreviandoOperadoresAritmetico",

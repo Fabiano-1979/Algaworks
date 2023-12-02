@@ -7,7 +7,7 @@ public class ExemploByteShort {
       short quantidadeEstoque = 32767; // valor máximo
       // short quantidadeEstoque2 = 32768; // não compila
       
-      //System.out.println("Idade: ", idade);
+      
 
     }
   
