@@ -30,7 +30,7 @@ public class OperadoresAritmeticos {
     int mediaIdade2 = (suaIdade + minhaIdade + idadeJoao) / 3; // Lembre-se , sem o parentes () vai resolver a divisão 1º 
     // para depois a SOMA ++
     int mediaIdade = suaIdade + minhaIdade + idadeJoao / 3;
-      System.out.println(" Media das idades é: "+mediaIdade2+" Sem parentes ()"+mediaIdade);
+      System.out.println(" Media das idades é: "+mediaIdade2+" - Sem parentes () :"+mediaIdade);
 
 
   
