@@ -11,7 +11,7 @@ public class AbreviandoOperadoresAritmetico {
         // quantidadeProduto += 3;
         // quantidadeProduto -= 3;
         // quantidadeProduto *= 3;
-        quantidadeProduto /= 2;
+         quantidadeProduto /= 2;
         // quantidadeProduto %= 4;
 
         System.out.println(quantidadeProduto);
