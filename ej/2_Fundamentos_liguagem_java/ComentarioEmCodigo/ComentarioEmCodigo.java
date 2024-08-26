@@ -1,6 +1,6 @@
 // exemplo de comentario 
 
-public class OlaMergulhador {
+public class ComentarioEmCodigo {
 
   public static void main(String[] args) { // pode ser em qualquer lugar 
     // o cometario
