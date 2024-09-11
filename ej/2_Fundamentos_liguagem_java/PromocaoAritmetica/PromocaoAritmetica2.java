@@ -6,7 +6,7 @@ public class PromocaoAritmetica2 {
 
     // long z = x * y; // não compila, nesse caso o pnto flutuante sempre tem vantagem, mesmo sendo 32bits. 
 
-    float z = x * y;
+    float z = x * y; // float e ponto flutuante
 
     System.out.println(z);
   }
